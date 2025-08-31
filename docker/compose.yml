@@ -1,0 +1,11 @@
+services:
+  agilab:
+    build: .
+    volumes:
+      - ./:/workspace/agi-lab
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

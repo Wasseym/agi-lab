@@ -1,0 +1,7 @@
+task: humaneval
+shots: 0
+limit: null
+batch_size: 1
+model:
+  dtype: float16
+  max_new_tokens: 256

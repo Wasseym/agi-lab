@@ -1,0 +1,3 @@
+eval_globs:
+  - data/evals/**/*.jsonl
+threshold: 0.9

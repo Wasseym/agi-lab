@@ -1,0 +1,4 @@
+episodic:
+  max_items: 200
+vector:
+  dim: 384

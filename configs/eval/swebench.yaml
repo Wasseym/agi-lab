@@ -1,0 +1,7 @@
+task: swebench
+shots: 0
+limit: 5
+batch_size: 1
+model:
+  dtype: bfloat16
+  max_new_tokens: 512

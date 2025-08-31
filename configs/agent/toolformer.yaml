@@ -1,0 +1,5 @@
+apis:
+  - name: search
+    signature: "query: str -> str"
+  - name: calculator
+    signature: "expr: str -> str"

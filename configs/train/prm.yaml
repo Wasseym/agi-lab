@@ -1,0 +1,12 @@
+seed: 42
+project: prm_small
+model:
+  base: distilbert-base-uncased
+train:
+  epochs: 1
+  per_device_batch_size: 2
+  lr: 1.0e-5
+  output_dir: runs/prm_small
+  bf16: false
+data:
+  proc_steps_ds: datasets/local/prm_steps_ds

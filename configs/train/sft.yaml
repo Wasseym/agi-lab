@@ -1,0 +1,22 @@
+seed: 42
+project: sft_8b_min
+model:
+  base: meta-llama/Meta-Llama-3-8B
+  load_4bit: true
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+train:
+  epochs: 1
+  per_device_batch_size: 2
+  grad_accum_steps: 8
+  lr: 1.0e-5
+  warmup_ratio: 0.03
+  max_seq_len: 1024
+  gradient_checkpointing: true
+  logging_steps: 10
+  save_steps: 200
+  output_dir: runs/sft_8b_min
+  bf16: true
+data:
+  sft_dataset: datasets/local/sft_v1.jsonl

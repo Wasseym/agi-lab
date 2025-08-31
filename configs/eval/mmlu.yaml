@@ -1,0 +1,7 @@
+task: mmlu
+shots: 5
+limit: 50
+batch_size: 8
+model:
+  dtype: bfloat16
+  max_new_tokens: 128
